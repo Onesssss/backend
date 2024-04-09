@@ -16,8 +16,8 @@ const cartRouter = require('./api/routers/cart.router');
 const adminRouter = require('./api/routers/admin.router');
 const addressVnRouter = require('./api/routers/addres.vn.router');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/fashion_book_db');
-// mongoose.connect(process.env.LINK_MONGOOSE);
+// mongoose.connect('mongodb://localhost:27017/fashion_book_db');
+mongoose.connect('mongodb+srv://Quang:Quang@cluster0.pozfjut.mongodb.net/fashion_book_db');
 const address = require('./api/models/address.vn.model');
 const test = () => {
     Object.keys(data).forEach( function(k){
