@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
+mongoose.env;
 const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -16,7 +17,6 @@ const cartRouter = require('./api/routers/cart.router');
 const adminRouter = require('./api/routers/admin.router');
 const addressVnRouter = require('./api/routers/addres.vn.router');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://Quang:Quang@cluster0.pozfjut.mongodb.net/fashion_book_db');
 const address = require('./api/models/address.vn.model');
 const test = () => {
     Object.keys(data).forEach( function(k){
